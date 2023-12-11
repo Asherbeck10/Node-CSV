@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { MatchResult } from './MatchResult';
+// import { MatchResult } from './MatchResult';
 
 export abstract class CsvFileReader<T> {
   data: T[] = [];
@@ -18,4 +18,5 @@ export abstract class CsvFileReader<T> {
       })
       .map(this.mapRow);
   }
-}
+} //Test file
+console.log('test file');
